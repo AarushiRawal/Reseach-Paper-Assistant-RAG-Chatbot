@@ -1,0 +1,10 @@
+[
+  {"question": "What is BERT?", "expected": ["1810.04805"]},
+  {"question": "Compare BERT and BART", "expected": ["1810.04805", "1910.13461"]},
+  {"question": "What is self-attention?", "expected": ["1706.03762"]},
+  {"question": "What does Table 2 report in the T5 paper?", "expected": ["1910.10683"]},
+  {"question": "Summarize the GLUE Benchmark paper", "expected": ["1804.07461"]},
+  {"question": "How does ColBERT differ from DPR?", "expected": ["2004.12832", "2004.04906"]},
+  {"question": "What is the Vision Transformer architecture?", "expected": ["2010.11929"]},
+  {"question": "Explain Fusion-in-Decoder", "expected": ["2007.01282"]}
+]

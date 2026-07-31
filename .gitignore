@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Generated at runtime: PDFs, figure crops, Chroma index, caches, logs
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

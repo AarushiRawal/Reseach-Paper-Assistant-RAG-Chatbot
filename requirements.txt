@@ -1,0 +1,35 @@
+# --- Pinned to the versions this project is known to work with ---------------
+# numpy is pinned BELOW 2.1: the notebook hit an ABI mismatch where numba and
+# several compiled wheels refused numpy 2.x. Do not relax this without retesting
+# chromadb + torch together.
+numpy<2.1
+
+# Core RAG stack
+langchain-core>=0.3,<0.4
+langchain-text-splitters>=0.3,<0.4
+langchain-chroma>=0.2,<0.3
+langchain-huggingface>=0.2,<0.3
+langchain-groq>=0.2,<0.4
+chromadb>=0.5,<0.7
+
+# Embeddings + local vision captioning
+sentence-transformers>=3.0
+transformers>=4.44
+torch>=2.2            # see README for the CUDA build; the PyPI default is CPU-only
+Pillow>=11.0
+pytesseract>=0.3.10   # needs the tesseract-ocr system binary; optional
+
+# PDF handling + sources
+pymupdf>=1.24         # imported as `fitz`
+arxiv>=2.1
+requests>=2.31
+
+# API + frontend
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+streamlit>=1.35
+python-dotenv>=1.0
+
+# Tests
+pytest>=8.0
